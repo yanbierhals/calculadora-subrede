@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubNet Calcular</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="CIDR.js"></script>
+
+</head>
+<body>
+    
+    <ul class="nav justify-content-end bg-dark mb-4">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Calc</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexMask.html">Calc CIDR</a>
+        </li>
+      </ul>
+      
+    <div class="ml-4">
+        <div>
+            <form id="formIP">
+                <fieldset>
+                    <legend>Sub-Net Calculator</legend>
+                    <label for="hosts">Máscara CIDR: </label>
+                    <input type="number" id="hosts" name="hosts"
+        min="1" max="32">
+                
+                    <br>
+                </fieldset>
+            </form>
+
+            <br>
+            <input type="submit" value="Calcular" onclick="calcCIDR(hosts.value)">
+            <br>
+            <table>
+                <tr>
+                    <th>Máscara:</th>
+                    <th id="result"></th>
+                </tr>
+
+            </table>
+    </div>
+
+     
+</body>
+</html>

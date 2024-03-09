@@ -1,0 +1,27 @@
+body {
+    background: #638899;
+}
+
+table, tr, th, td {
+    border: 2px black solid;
+}
+
+table {
+    margin-top: 24px;
+    border-radius: 10px;
+    border-width: thick;
+    background-color: #e2e2e2;
+}
+
+tr, th, td {
+    padding: 1rem 3.5rem;
+}
+
+.ipN {
+    width: 50px;
+    text-align: center;
+}
+
+.ipN::placeholder {
+    text-align: center;
+  }
